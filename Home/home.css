@@ -1,0 +1,343 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+nav{  
+    background-color: #2b0f1b;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem-nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;   
+}
+
+.logo img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+}
+
+.nome {
+  font-family: monospace, cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: pink;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    text-decoration: none;
+    color: #e0b8ce;;   
+}a:hover {
+    color: #ee76ae;
+}
+
+main{ 
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url('imagens/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.legenda{
+    font-size: 3rem;
+    color: #4d0b26;
+    font-family: "VT323", monospace;
+}
+
+.catalogo{
+   width: 80%;
+   height: 6rem; 
+   display: flex;
+   flex-direction: row;
+   background-color: #6e1240;
+   border-radius: 50px;
+   align-items: center; 
+   justify-content: center; 
+   opacity: 0.7;
+   padding: 0.8rem;
+   gap: 0.5rem;
+   overflow: visible;
+}
+
+.seta {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 0 1rem;  
+}
+
+.seta:hover {
+    opacity: 1;        
+    transform: scale(1.2);
+    transition: 0.3s;  
+}
+
+.jogos-wrapper {
+  overflow: hidden;
+  flex: 1;
+  height: 130%;
+  display: flex;
+  align-items: center;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.jogos{ 
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   height: 100%;
+   transition: transform 0.4s ease;
+}
+
+.jogos img{
+    width: auto; 
+    height: 4.5rem;
+    object-fit: cover;    
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.jogos a {
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: visible;
+}
+.jogos a:hover {
+    transform: scale(1.1);      
+    z-index: 10;            
+}
+
+.destaque{
+    width: 32.6rem;
+    height: 22rem;
+    border-radius: 50px;
+    background-color:#6e1240;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.gif{
+    position: relative;
+    display: inline-block;
+}
+
+.texto-gif {
+    position: absolute;
+    top: 50%;             
+    left: 50%;
+    transform: translateX(-50%);   
+    font-size: 2.5rem;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 1;           
+    white-space: nowrap;  
+    color: #ffffff;
+    text-shadow: 0 0 40px #cacaca;
+}
+
+.gif img{
+    width: 100%;        
+    border-radius: 50px;
+    opacity: 65%;
+    display: block;
+}
+
+button {
+ background-color: #dfdadd;
+ border: none;
+ padding: 1rem;
+ font-size: 1rem;
+ width: 10em;
+ border-radius: 20rem;
+ color: rgb(53, 18, 34);
+ box-shadow: 0 0.4rem #220913;
+ cursor: pointer;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:active {
+ box-shadow: 0 0.2rem #cacaca;
+ transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+ background: rgb(31, 4, 14);
+ color: rgb(201, 160, 184);
+}
+
+.gif button {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gif button:active {
+    transform: translateX(-50%) translateY(0.2rem); /* ← mantém centralizado no active */
+}
+
+.infos{
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+#footer{
+    width: 100%;
+    height: 6rem;
+    background-color: #561631;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        height: auto;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    ul {
+        gap: 0.5rem;
+        margin-right: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.3rem;
+        gap: 1.5rem;
+    }
+
+    main {
+        height: auto;
+        padding: 1rem 0.5rem;
+        overflow-x: hidden;
+    }
+
+    .legenda {
+        font-size: 1.3rem;
+        text-align: center;
+        white-space: normal;
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .catalogo {
+        width: 95%;
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 20px;
+        overflow: hidden;
+        gap: 1rem;
+    }
+
+    .jogos {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        height: auto;
+    }
+
+    .jogos img {
+        height: 3rem;
+    }
+
+    .seta {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0 0.3rem;
+    }
+
+    .destaque {
+        width: 95%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .gif {
+        width: 100%;
+    }
+
+    .gif img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .texto-gif {
+        font-size: 1.6rem;
+        white-space: normal;
+        text-align: center;
+        width: 90%;
+    }
+
+    .gif button {
+        bottom: 1rem;        
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+     #footer {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .infos {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
