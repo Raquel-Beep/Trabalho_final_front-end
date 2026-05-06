@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    width: 100%;
+    background-image: url('../Home/imagens/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.nav-superior{
+    background-color: #2b0f1b;
+    width: 100%;
+    height: 5rem;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-titulo {
+    font-family: monospace;
+  font-style: normal;
+  font-size: 2rem;
+  color: pink;
+
+}
+.brand-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:0.5rem
+}
+.logo-redonda {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+
+}
+
+.nav-links {
+      list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.links {
+    text-decoration: none;
+    color: #e0b8ce;
+    font-family: 'Times New Roman';
+    font-size: 1.1rem;
+}
+.links:hover {
+    color: #ff69b4;
+}
+
+
+.formulario   {
+    background-color:#6e1240;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%; 
+    margin: 40px auto;
+    padding: 2rem;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+    color: white;
+ 
+ 
+}
+.formulario h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 25px;
+    color: #ffc1e3;
+    font-family: "VT323";
+}
+.grupo-campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.campoTXT{
+    display: block;
+    margin-bottom: 8px;
+    color: #ffc1e3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "VT323";
+}
+.grupo-campo input, .grupo-campo textarea {
+    width: 100%;
+    padding: 15px; 
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 8px;
+    font-size: 1.2rem; 
+}
+
+.botao-rosa{
+    background-color: #ff69b4 !important;
+    border: none !important;
+    color: white !important;
+    font-family:"VT323" ;
+    font-weight: bold;
+    font-size: 1.6rem !important;
+    transition: 0.3s;
+}
+.botao-rosa:hover {
+    background-color: #ff1493 !important;
+    cursor: pointer;
+}
+
+#main-footer {
+    background-color: #2b0f1b;
+    padding: 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer-links {
+    list-style: none; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.footer-links li a {
+    text-decoration: none;
+    color: #ffc0cb; 
+    font-family: 'Times New Roman';
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+.footer-links li a:hover {
+    color: #ff69b4; 
+}
