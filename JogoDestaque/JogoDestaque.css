@@ -4,47 +4,49 @@
     box-sizing: border-box;
 }
 
-.header {
-    width: 100%;
-    height: 4rem;
+.header{
     background-color: #2b0f1b;
+    width: 100%;
+    height: 5rem;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 0 2rem;
+    align-items: center;
 }
 
-.logo img {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50px;
+.logo img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-top: 0.4rem;
 }
 
-.ItGirls {
-    color: pink;
-    font-family: 'VT323', monospace;
-    flex: 1;
-    padding-left: 1rem;
+.ItGirls{
+  font-family: monospace, cursive;
+  font-style: normal;
+  font-size: 2rem;
+  color: pink;
+  flex: 1;
+  padding-left: 1rem;
 }
 
 .nav ul {
+    list-style: none;
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    list-style: none;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.links {
+.links{
     text-decoration: none;
-    color: pink;
-    transition: transform 0.3s ease;
-    display: inline-block;
+    color: #e0b8ce;;
+}a:hover {
+    color: #ee76ae;
 }
-
-.links:hover{
-    transform: scale(1.15)
-}
-
 
 .section {
     width: 100%;
@@ -211,7 +213,7 @@
 
 .footer {
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     background-color: #561631;
 }
 
