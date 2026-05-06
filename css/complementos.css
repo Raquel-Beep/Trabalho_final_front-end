@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle, var(--cor-06), #DBC0C7, var(--cor-05) 50%, #9e6e81, #7e5765, #000000);
+    margin: 0;
+}
+
+main{
+    margin: auto;
+    background-color: #FFF;
+}

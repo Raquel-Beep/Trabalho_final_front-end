@@ -4,13 +4,8 @@ main{
     margin: auto;
 }
 
-h1{
-    font-family: var(--fonte-it-girls);
-    color: var(--cor-05);
-}
-
 h2{
-    text-align: right;
+    text-align: ce;
     font-family: var(--fonte-padrao);
     font-style: italic;
     font-size: 2rem;

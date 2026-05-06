@@ -8,18 +8,25 @@
     --cor-04: #2b0f1b;
     --cor-05: #daa6b8;
     --cor-06: #E6D9DC;
+    --cor-07: #ee76ae;
 
     --fonte-padrao: 'VT323', monospace;
-    --fonte-it-girls: 'Courier New', Courier, monospace;
+    --fonte-it-girls: monospace, cursive;
     --fonte-link: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
-    min-height: 100vh;
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    background-image: url(../assets/fundo.png);
     display: flex;
     flex-direction: column;
-    background-image: radial-gradient(circle, var(--cor-06), #DBC0C7, var(--cor-05) 50%, #9e6e81, #7e5765, #000000);
-    margin: 0;
+    align-items: center;
+    min-height: 100vh;
 }
 
 nav{
@@ -30,33 +37,41 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: var(--cor-04);
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 0;
+    list-style: none;
 }
 
 a{
     color: var(--cor-05);
     text-decoration: none;
-    font-family: var(--fonte-link);
+    list-style: none;
     font-size: 15px;
-    justify-content: end;
-    align-items: flex-end;
-    text-align: right;
     margin-top: auto;
-    margin: 10px;
+    padding: 1rem;
+    gap: 1.5rem;
 }
 
 a:hover{
-    color: var(--cor-01);
+    color: var(--cor-07);
     cursor: pointer;
     transition: 0.3s;
 }
 
 footer{
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--cor-04);
     height: 5rem;
     align-items: center;
     justify-content: center;
     margin-top: auto;
+    width: 100%;
+    padding: 0.5rem;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
 }
 
 .imagem-nome{
@@ -68,8 +83,17 @@ footer{
 
 .img-logo{
     object-fit: cover;
-    width: 4rem;
-    height: 4rem;
-    margin: 10px;
-    border-radius: 50px;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 150px;
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+}
+
+.ItGirls{
+    font-family: var(--fonte-it-girls);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--cor-05);
 }

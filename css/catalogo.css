@@ -1,0 +1,123 @@
+/* Titulo */
+.centro {
+    font-family: "VT323", monospace;
+    color: #ffffff;
+    letter-spacing: 6px;
+    font-size: 40px;
+    text-shadow: #4f0061 4px 4px 0px;
+    text-align: center;
+    margin: 20px auto;
+}
+/* Listas */
+.container-listas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px 0;
+    padding-bottom: 50px;
+}
+
+/* CARDS (3 caixas) */
+.dupla{
+    border: 2px solid #f3c8dd;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ffadd7;
+    min-width: 280px;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}.solo{
+    border: 2px solid #f3c8dd;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ffadd7;
+    min-width: 280px;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+} .mobile {
+    border: 2px solid #f3c8dd;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ffadd7;
+    min-width: 280px;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.dupla:hover{
+    transform: translateY(-5px);
+}
+.solo:hover{
+    transform: translateY(-5px);
+}
+.mobile:hover {
+    transform: translateY(-5px);
+}
+
+/* Titulo da lista */
+h4 {
+    font-family: "VT323", monospace;
+    color: #000;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Botões */
+.botao {
+    background-color: #6f1d3f;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #2b0f1b;
+    transform: scale(1.02);
+}
+
+/* imagens dos jogos */
+.jogo {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .jogo {
+        width: 50px;
+        height: 30px;
+    }
+}
