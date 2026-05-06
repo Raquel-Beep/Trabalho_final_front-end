@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
   const setaEsquerda = document.getElementById('seta-esquerda');
   const setaDireita = document.getElementById('seta-direita');
 
-  // Duplica os cards para criar o loop infinito
+  
   const cardsOriginais = Array.from(jogos.querySelectorAll('a'));
   cardsOriginais.forEach(card => {
     const clone = card.cloneNode(true);
@@ -37,14 +37,14 @@ window.addEventListener('load', () => {
     jogos.addEventListener('transitionend', () => {
       const larguraTotalOriginais = getLarguraTotal();
 
-      // Se passou do fim, volta silenciosamente para o início
+
       if (posicao >= larguraTotalOriginais) {
         posicao -= larguraTotalOriginais;
         jogos.style.transition = 'none';
         jogos.style.transform = `translateX(-${posicao}px)`;
       }
 
-      // Se voltou antes do início, pula para o fim equivalente
+
       if (posicao < 0) {
         posicao += larguraTotalOriginais;
         jogos.style.transition = 'none';
