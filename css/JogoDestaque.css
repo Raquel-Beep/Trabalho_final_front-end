@@ -4,50 +4,32 @@
     box-sizing: border-box;
 }
 
-.header{
-    background-color: #2b0f1b;
+.header {
     width: 100%;
-    height: 5rem;
+    height: 4rem;
+    background-color: #2b0f1b;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    gap: 0.2rem;
-}
-
-.logo img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50px;
-    margin-left: 0.2rem;
-    margin-top: 0.5rem;
-    
-}
-
-.ItGirls {
-    color: pink;
-    font-family: 'VT323', monospace;
-    flex: 1rem;
-    font-style: normal;
-    font-size: 2rem;
-    padding-left: 1rem;
 }
 
 .nav ul {
-    list-style: none;
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-right: 2rem;
-    align-items: center;
-    justify-content: center;
+    list-style: none;
 }
 
-.links{
+.links {
     text-decoration: none;
-    color: #e0b8ce;;
-}a:hover {
-    color: #ee76ae;
+    color: pink;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.links:hover{
+    transform: scale(1.15)
 }
 
 .section {
@@ -172,7 +154,6 @@
     line-height: 1.6;
 }
 
-
 .PN {
     width: 90%;
     display: flex;
@@ -211,12 +192,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: larger;
     padding: 0 1rem 0 2rem;
-}
-
-.footer {
-    width: 100%;
-    height: 6rem;
-    background-color: #561631;
 }
 
 .termos {

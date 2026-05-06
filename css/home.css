@@ -1,39 +1,9 @@
-*{
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-}
-
-nav{  
-    background-color: #2b0f1b;
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.imagem-nome{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;   
-}
-
 .logo img{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     margin-left: 2rem;
     margin-top: 0.4rem;
-}
-
-.nome {
-  font-family: monospace, cursive;
-  font-style: normal;
-  font-size: 2rem;
-  color: pink;
 }
 
 ul {
@@ -46,20 +16,12 @@ ul {
     justify-content: center;
 }
 
-.links{
-    font-family: 'Times New Roman';
-    text-decoration: none;
-    color: #e0b8ce;;   
-}a:hover {
-    color: #ee76ae;
-}
-
 main{ 
     width: 100%;
     height: 35rem;
     display: flex;
     flex-direction: column;
-    background-image: url('imagens/fundo.png');
+    background-image: url('../assets/fundo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -218,12 +180,6 @@ button:hover:not(:disabled) {
     justify-content: center;
     gap: 4rem;
     list-style: none;
-}
-
-#footer{
-    width: 100%;
-    height: 6rem;
-    background-color: #561631;
 }
 
 @media (max-width: 600px) {

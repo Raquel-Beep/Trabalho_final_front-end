@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root{
+    --cor-01: #b9004e;
+    --cor-02: #561631;
+    --cor-03: #3c1325;
+    --cor-04: #2b0f1b;
+    --cor-05: #daa6b8;
+    --cor-06: #E6D9DC;
+    --cor-07: #ee76ae;
+
+    --fonte-padrao: 'VT323', monospace;
+    --fonte-it-girls: monospace, cursive;
+    --fonte-link: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    background-image: url(../assets/fundo.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-04);
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 0;
+    list-style: none;
+}
+
+a{
+    color: var(--cor-05);
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    margin-top: auto;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+a:hover{
+    color: var(--cor-07);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor-04);
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+    padding: 0.5rem;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+.imagem-nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;   
+}
+
+.img-logo{
+    object-fit: cover;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 150px;
+    margin-left: 2rem;
+    margin-top: 0.4rem;
+}
+
+.ItGirls{
+    font-family: var(--fonte-it-girls);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--cor-05);
+}
