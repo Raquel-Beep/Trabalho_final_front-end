@@ -7,7 +7,7 @@
 nav{  
     background-color: #2b0f1b;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,8 +22,8 @@ nav{
 }
 
 .logo img{
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     margin-left: 2rem;
     margin-top: 0.4rem;
@@ -31,7 +31,6 @@ nav{
 
 .nome {
   font-family: monospace, cursive;
-  font-weight: 400;
   font-style: normal;
   font-size: 2rem;
   color: pink;
@@ -48,6 +47,7 @@ ul {
 }
 
 .links{
+    font-family: 'Times New Roman';
     text-decoration: none;
     color: #e0b8ce;;   
 }a:hover {
@@ -155,11 +155,10 @@ main{
 }
 
 .destaque{
-    width: 32.6rem;
-    height: 22rem;
+    width: 32rem;
+    height: 21rem;
     border-radius: 50px;
     background-color:#6e1240;
-    opacity: 0.7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,25 +171,10 @@ main{
     display: inline-block;
 }
 
-.texto-gif {
-    position: absolute;
-    top: 50%;             
-    left: 50%;
-    transform: translateX(-50%);   
-    font-size: 2.5rem;
-    font-family: "Chango", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    z-index: 1;           
-    white-space: nowrap;  
-    color: #ffffff;
-    text-shadow: 0 0 40px #cacaca;
-}
-
 .gif img{
-    width: 100%;        
+    width: 35rem; 
+    height: 21rem;       
     border-radius: 50px;
-    opacity: 65%;
     display: block;
 }
 
